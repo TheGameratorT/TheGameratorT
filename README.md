@@ -32,6 +32,7 @@ int main() {
         }
     }
     std::cout << output;
+    delete[] output;
     return 0;
 }
 ```
