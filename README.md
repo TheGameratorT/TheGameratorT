@@ -1,16 +1,41 @@
-### Hi there 👋
+<div align="center">
+  <h1>Hello there! 😄</h1>
+  <p>My name is <b>Tiago Silva</b><p>
+  I am a hobbist programmer that likes to code just because I usually have nothing to do or want to make something useful to help others.
+</div>
+<br>
+<div align="center">
+  <a href="https://github.com/Pepyn0/github-readme-stats"><img width=450 height=170 align="center" src="https://github-readme-stats.vercel.app/api?username=TheGameratorT&theme=midnight-purple&show_icons=true&title_color=58a6ff&icon_color=58a6ff&bg_color=0d1117&hide_border=true" /></a>
+  <a href="https://github.com/Pepyn0/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=TheGameratorT&theme=midnight-purple&layout=compact&title_color=58a6ff&icon_color=58a6ff&bg_color=0d1117&hide_border=true" /></a>
+</div>
+<br>
 
-<!--
-**TheGameratorT/TheGameratorT** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<div align="center">
+<p>A snippet of code for you to try out. 😉</p>
+</div>
 
-Here are some ideas to get you started:
+```cpp
+#include <iostream>
+#include <cstring>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+static const char* input = "XQXQ,&),Ve^Y,^e]RUb,Rbbbbb";
+
+int main() {
+    size_t input_size = strlen(input);
+    char* output = new char[input_size];
+    for (size_t i = 0; i < input_size; i++) {
+        char c = input[i];
+        if (c == 0x2C) {
+            output[i] = static_cast<char>(0x20);
+        } else {
+            output[i] = static_cast<char>(c + 0x10);
+        }
+    }
+    std::cout << output;
+    return 0;
+}
+```
+
+<div align="center">
+<h3>What are you doing here!!!???? 😳😳😳</h3>
+</div>
