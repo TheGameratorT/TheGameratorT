@@ -2,7 +2,7 @@
   <h1>Hello there! 😄</h1>
   <p>My name is <b>Tiago Silva</b><p>
   <p>I am a hobbist programmer that likes to code just because I usually have nothing to do or want to make something useful to help others.</b><p>
-  Discord: TheGameratorT#1850
+  Discord: @thegameratort
 </div>
 <br>
 <div align="center">
