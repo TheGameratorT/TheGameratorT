@@ -1,7 +1,8 @@
 <div align="center">
   <h1>Hello there! 😄</h1>
   <p>My name is <b>Tiago Silva</b><p>
-  <p>I am a hobbist programmer that likes to code just because I usually have nothing to do or want to make something useful to help others.</b><p>
+  <p>I am a hobbist programmer that likes to code just because I usually have nothing to do, want to make something useful to help others, or if @Ndymario bugs me to code something.</b><p>
+  <!-- Ndy was here! You most be some sort of goof if you're snooping around in here :p /!-->
   Discord: @thegameratort
 </div>
 <br>
