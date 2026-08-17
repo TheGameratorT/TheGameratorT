@@ -23,13 +23,11 @@
 const char secret[] = "H^d,bW^d[S,_Xbb,h^dabT[U,=>F-";
 
 int main() {
-    for (char c : secret) {
-        if (c) {
-            std::cout << static_cast<char>(
-                (c == 0x2C || c == 0x2D) ?
-                    c - 0xC :
-                    c + 0x11);
-        }
+    for (const char* c = secret; *c != 0; c++) {
+        std::cout << static_cast<char>(// C++ !
+            (*c == 0x2C || *c == 0x2D) ?
+                *c - 0xC :
+                *c + 0x11);
     }
 }
 ```
