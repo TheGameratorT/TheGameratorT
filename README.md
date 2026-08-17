@@ -20,19 +20,16 @@
 ```cpp
 #include <iostream>
 
-const char input[] = "H^d,bW^d[S,_Xbb,h^dabT[U,=>F-";
+const char secret[] = "H^d,bW^d[S,_Xbb,h^dabT[U,=>F-";
 
 int main() {
-    char* output = new char[sizeof(input)];
-    for (size_t i = 0; i < sizeof(input)-1; i++) {
-        char c = input[i];
-        output[i] = static_cast<char>(
-            (c == 0x2C || c == 0x2D) ?
-                (c - 0xC) :
-                (c + 0x11));
+    for (char c : secret) {
+        if (c) {
+            std::cout << static_cast<char>(
+                (c == 0x2C || c == 0x2D) ?
+                    c - 0xC :
+                    c + 0x11);
+        }
     }
-    std::cout << output;
-    delete[] output;
-    return 0;
 }
 ```
