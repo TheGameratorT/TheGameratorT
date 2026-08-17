@@ -1,7 +1,8 @@
 <div align="center">
   <h1>Hello there! 😄</h1>
-  <p>My name is <b>Tiago Silva</b><p>
-  <p>I am a hobbist programmer that likes to code just because I usually have nothing to do, want to make something useful to help others, or if @Ndymario bugs me to code something.</b><p>
+  <p>My name is <b>Tiago Silva</b> and I am a computer engineer!<p>
+  <p>I code, love music and I'm currently learning both drawing and Japanese.<p>
+  <p>The programs I write for myself often end up shared with everyone, or if <b>@Ndymario</b> bugs me to code something.</b><p>
   <!-- Ndy was here! You most be some sort of goof if you're snooping around in here :p /!-->
   Discord: @thegameratort
 </div>
@@ -18,20 +19,17 @@
 
 ```cpp
 #include <iostream>
-#include <cstring>
 
-static const char* input = "XQXQ,&),Ve^Y,^e]RUb,Rbbbbb";
+const char input[] = "H^d,bW^d[S,_Xbb,h^dabT[U,=>F-";
 
 int main() {
-    size_t input_size = strlen(input);
-    char* output = new char[input_size];
-    for (size_t i = 0; i < input_size; i++) {
+    char* output = new char[sizeof(input)];
+    for (size_t i = 0; i < sizeof(input); i++) {
         char c = input[i];
-        if (c == 0x2C) {
-            output[i] = static_cast<char>(0x20);
-        } else {
-            output[i] = static_cast<char>(c + 0x10);
-        }
+        output[i] = static_cast<char>(
+            (c == 0x2C || c == 0x2D) ?
+                (c - 0xC) :
+                (c + 0x11));
     }
     std::cout << output;
     delete[] output;
