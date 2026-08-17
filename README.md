@@ -38,7 +38,3 @@ int main() {
     return 0;
 }
 ```
-
-<div align="center">
-<h3>What are you doing here!!!???? 😳😳😳</h3>
-</div>
