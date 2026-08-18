@@ -14,7 +14,7 @@
 <br>
 
 <div align="center">
-<p>A snippet of code for you to try out. 😉</p>
+<p>A snippet of code for you~ ❤️</p>
 </div>
 
 ```cpp
